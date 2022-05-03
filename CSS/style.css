@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+}
+
+body {
+  font-family: 'sora', sans-serif;
+  line-height: 1.5;
+  background-color: #f1f1f1;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  min-width: 280px;
+  max-width: 300px;
+  height: 100%;
+  border-right: solid 2.5px #333;
+  background-color: #1CACD7;
+}
+
+/* To style the font size of the JS Documentation Title*/
+#main-header {
+  font-size: 15px;
+  text-align: center;
+  padding: 1rem 0;
+  font: black;
+}
+
+#navbar ul {
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 90%;
+  list-style: none;
+}
+
+/* To create the borders for the links*/
+#navbar ul li {
+  border: solid 1.3px #333;
+}
+
+#navbar ul li a {
+  display: block;
+  text-align: left;
+  padding: .8rem 1rem .8rem 2rem;
+  cursor: pointer;
+  color: #222;
+  text-decoration: none;
+}
+
+/* main section */
+
+/* To properly position the main-doc with margin */
+#main-doc {
+  position: absolute;
+  margin-left: 320px;
+  padding: 2rem 1rem;
+}
+
+/* To style the headers of the main-doc */
+#main-doc .main-section header {
+  font-size: 2rem;
+  padding: 1rem 0;
+}
+
+/* To style the font color and pad the main-article */
+#main-doc .main-section .main-article {
+  padding-left: 1.5rem;
+  margin-bottom: .5rem;
+  color: #222;
+}
+
+/* To pad the paragraph section in the main-article */
+#main-doc .main-section .main-article p {
+  margin-bottom: 1rem;
+}
+
+#main-doc .main-section .main-article ul {
+  margin: 1.3rem 0 0 1.2rem;
+}
+
+#main-doc .main-section .main-article ul li {
+  margin-bottom: 1rem;
+}
+
+/* To style the code section */
+#main-doc .main-section .main-article code {
+  display: block;
+  padding: 1.5rem;
+  text-align: left;
+  background-color: #1CACD7;
+  border-radius: 7px;
+  margin-bottom: 1rem;
+}
+
+#main-doc .main-section:last-child .main-article ul {
+  margin: .5rem 0 1.5rem 3rem;
+  padding: 0;
+}
+
+#creator {
+  text-align: left;
+  padding: 2rem 0 0;
+}
+
+#navbar a:hover {
+	background-color: rgb(173, 241, 150);
+	color: black;
+}
+
+/* mobile-devices */
+@media (max-width: 600px) {
+  #navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    max-width: 95%;
+    max-height: 400px;
+  }
+
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    padding: 2rem 1rem;
+    margin-top: 410px;
+  }
+
+}
